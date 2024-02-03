@@ -11,32 +11,25 @@ function loginSubmit(argument){
     argument.preventDefault();
     const username = loginInput.value;
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    welcome__text.classList.remove(HIDDEN_CLASSNAME);
+    logoutForm.classList.remove(HIDDEN_CLASSNAME);
     welcome__text.innerHTML = `Hello, ${username}`;
     localStorage.setItem(USERNAME_KEY, username);
-    logoutBtn.classList.remove(HIDDEN_CLASSNAME);
-    logoutForm.addEventListener("submit", logout);
-
 }
 function logout(logout__argument){
     localStorage.removeItem(USERNAME_KEY);
     logout__argument.preventDefault();
-    logoutForm.classList.add("hidden");
-    loginForm.classList.remove("hidden");
+    logoutForm.classList.add(HIDDEN_CLASSNAME);
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
 }
 
-
  if (localStorage.getItem(USERNAME_KEY) === null){
-    loginForm.classList.remove(HIDDEN_CLASSNAME);
-    logoutForm.classList.add(HIDDEN_CLASSNAME);
-    loginForm.addEventListener("submit", loginSubmit);
+
  }
  else{
-    welcome__text.classList.remove(HIDDEN_CLASSNAME);
     logoutForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.classList.add(HIDDEN_CLASSNAME);
     welcome__text.innerText = `Hello, ${localStorage.getItem(USERNAME_KEY)}`
-    logoutForm.addEventListener("submit", logout);
-
  }
-
+ 
+ loginForm.addEventListener("submit", loginSubmit);
+ logoutForm.addEventListener("submit", logout);

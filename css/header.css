@@ -58,3 +58,18 @@ button{
 .air__level{
 font-size: 18px;}
 
+@keyframes logForm{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.login__form{
+    animation: logForm 0.5s ease-in-out;
+}
+.logout__form{
+    animation: logForm 0.5s ease-in-out;
+}
