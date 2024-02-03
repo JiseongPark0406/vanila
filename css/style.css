@@ -1,0 +1,42 @@
+@import "header.css";
+@import "reset.css";
+@import "todo.css";
+
+.hidden{
+    display: none;
+}
+
+img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+    filter:brightness(50%);    
+}
+body{
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.quote{
+    position: absolute;
+    bottom: 30px;
+}
+
+/* 
+1. form 안에 ul을 넣으면, input에서 엔터를 누를 때 button의 이벤트가 작동함.
+2. 리스트에 display flex를 넣어주면, 리스트 스타일이 제거되는 거 같음. 왜 그런지?
+    - ul에 list-style을 줘도 안되고, ul li에 줘도 안됨. 
+2. 화면이 1000px보다 너비가 작을 때, 무언가를 만들기. 유저가 화면을 넓히게끔 하는.
+    혹은 화면이 작더라도 부자연스러움이 없도록 하는.
+

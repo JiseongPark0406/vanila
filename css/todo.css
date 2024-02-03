@@ -1,0 +1,15 @@
+.todo__list button{
+    margin-left: 13px;
+}
+.todo__list li{
+    margin-top: 15px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo__input{
+    margin-top: 50px;
+    text-align: center;
+}
+

@@ -1,0 +1,60 @@
+
+
+.logout__btn{
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: antiquewhite;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    top: 0px;
+}
+.login__containe{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    align-items: center;
+text-align: center;
+margin-bottom: 80px;
+}
+
+.clock{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.welcome__text{
+    font-size: 30px;
+    font-weight: 900;
+}
+input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-bottom: 1px antiquewhite solid;
+    color: aliceblue;
+}
+input::placeholder{
+    color: antiquewhite;
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    color: antiquewhite;
+    border: 1px antiquewhite solid;
+    border-radius: 20px
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+}
+.weather__container{
+    display: flex;
+    flex-direction: column;
+}
+.air__level{
+font-size: 18px;}
+
