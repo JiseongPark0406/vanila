@@ -39,8 +39,10 @@ function onGeoSuccess(position){
 
         function showTextF(argument){
             argument.preventDefault();
-            ph2.classList.toggle("hidden");
-            ph5.classList.toggle("hidden");
+            ph2.classList.toggle("covered");
+            ph5.classList.toggle("covered");
+            ph2.classList.toggle("show");
+            ph5.classList.toggle("show");
 
                 }        
 
@@ -56,3 +58,4 @@ function onGeoError(){
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
+

@@ -58,18 +58,34 @@ button{
 .air__level{
 font-size: 18px;}
 
-@keyframes logForm{
+
+
+.login__form{
+    animation: fadeIn 0.5s ease-in-out;
+}
+.logout__form{
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes clock__mouseEnter__ani{
     from{
-        opacity: 0;
+        transform: translateX(0px);
     }
     to{
-        opacity: 1;
+        transform: translateX(-150px);
+    }
+}
+@keyframes clock__mouseLeave__ani{
+    from{
+        transform: translateX(-150px);
+    }
+    to{
+        transform: translateX(0px);
     }
 }
 
-.login__form{
-    animation: logForm 0.5s ease-in-out;
+.clock__hover{
+    animation: clock__mouseEnter__ani 1s ease-in-out forwards
 }
-.logout__form{
-    animation: logForm 0.5s ease-in-out;
+.clock__leave{
+ animation: clock__mouseLeave__ani 1s ease-in-out forwards
 }

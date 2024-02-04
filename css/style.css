@@ -1,11 +1,11 @@
 @import "header.css";
 @import "reset.css";
 @import "todo.css";
+@import "sidebar.css";
 
 .hidden{
     display: none;
 }
-
 img {
     position:absolute;
     width:100%;
@@ -33,6 +33,34 @@ body{
     bottom: 30px;
 }
 
+.show{
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+.covered{
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+li{
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
 /* 
 1. form 안에 ul을 넣으면, input에서 엔터를 누를 때 button의 이벤트가 작동함.
 2. 리스트에 display flex를 넣어주면, 리스트 스타일이 제거되는 거 같음. 왜 그런지?

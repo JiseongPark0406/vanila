@@ -4,7 +4,7 @@ const images = [
 "03.avif"
 ]
 
-const chosen__image = images[Math.floor(Math.random() * images.length)];
+let chosen__image = images[Math.floor(Math.random() * images.length)];
 
 const bg__img = document.createElement("img");
 bg__img.src= `img/${chosen__image}`;

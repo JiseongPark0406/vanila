@@ -1,0 +1,36 @@
+
+.sidebar__right__arrow__btn{
+    position: absolute;
+    right: 0px;
+    font-size: 30px;
+    border: 0px;
+}
+
+
+@keyframes rightArrowHoverAni {
+    0%{
+        transform: translateX(0px);
+
+    }
+    25%{
+        transform: translateX(-50px);
+
+    }
+    50%{
+        transform: translateX(0px);
+
+    }
+    75%{
+        transform: translateX(-50px);
+
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+.bg__rightArrow__hover{
+    animation: rightArrowHoverAni 1s ease-in-out forwards;
+}

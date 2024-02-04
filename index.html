@@ -19,8 +19,8 @@
           <button class="air__level"></button>
         </form>
         <div id="air__pollution">
-          <span class="air__ph2 hidden"> </span>
-          <span class="air__ph5 hidden"></span>
+          <span class="air__ph2 show"> </span>
+          <span class="air__ph5 show"></span>
         </div>
       </div>
     </header>
@@ -40,7 +40,11 @@
         <button class="logout__btn">Log-Out</button>
       </form>
     </div>
-
+    <sidebar>
+      <button class="sidebar__right__arrow__btn">
+        <i class="fa-solid fa-arrow-right sidebar__right__arrow__icon"></i>
+      </button>
+    </sidebar>
     <ul class="todo__list"></ul>
     <form class="todo__form">
       <input
@@ -61,5 +65,10 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3b352bcfa0.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

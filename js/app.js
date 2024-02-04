@@ -6,6 +6,8 @@ const HIDDEN_CLASSNAME = "hidden"
 const USERNAME_KEY = "username"
 const logoutBtn = document.querySelector(".logout__btn");
 const logoutForm = document.querySelector(".logout__form");
+const clockContainer = document.querySelector(".clock__container");
+const clockText = document.querySelector(".clock");
 
 function loginSubmit(argument){
     argument.preventDefault();
@@ -33,3 +35,12 @@ function logout(logout__argument){
  
  loginForm.addEventListener("submit", loginSubmit);
  logoutForm.addEventListener("submit", logout);
+
+ clockContainer.addEventListener(`mouseover`, function(){
+    clockText.classList.add("clock__hover");
+    clockText.classList.remove("clock__leave");
+ })
+ clockContainer.addEventListener(`mouseleave`, function(){
+    clockText.classList.remove("clock__hover");
+    clockText.classList.add("clock__leave");
+ })

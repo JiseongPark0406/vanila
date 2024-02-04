@@ -13,3 +13,17 @@
     text-align: center;
 }
 
+@keyframes deleteBtnAni{
+    from{
+        transform: rotate(0turn);
+        color: red;
+    }
+    to{
+        transform: rotate(6turn);
+        color: aquamarine;
+    }
+}
+.todo__list li button:hover{
+    animation: deleteBtnAni 1s ease-in-out forwards;
+
+}
