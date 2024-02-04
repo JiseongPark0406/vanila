@@ -9,7 +9,6 @@ function changeBackImgF(){
 sideBar.addEventListener("click", changeBackImgF)
 
 sideBarRightArrow.addEventListener("mouseenter", sideBarRightArrowEnterF)
-sideBarRightArrow.addEventListener("mouseleave", sideBarRightArrowLeaveF)
 
 function sideBarRightArrowEnterF(){
     sideBarRightArrowIcon.classList.add("bg__rightArrow__hover")
