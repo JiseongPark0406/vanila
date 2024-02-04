@@ -4,8 +4,8 @@ const apiKey = "d6fc6ddf5802f567ca1a5597edaba503"
 function onGeoSuccess(position){
     const lat = position.coords.latitude;
     const lng = position.coords.longitude;
-    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${apiKey}&units=metric`
-    const pollutionUrl = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=${apiKey}`
+    const weatherUrl = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${apiKey}&units=metric`
+    const pollutionUrl = `//api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=${apiKey}`
     fetch(weatherUrl).then(reponse => reponse.json()).then(data => {
         const weather = document.querySelector(".weather__weather");
         const city = document.querySelector(".weather__tem");
