@@ -6,14 +6,13 @@ function changeBackImgF(){
     bg__img.src= `img/${chosen__image}`;
     document.body.appendChild(bg__img);
 }
-sideBar.addEventListener("click", changeBackImgF)
+sideBar.addEventListener("click", changeBackImgF);
 
-sideBarRightArrow.addEventListener("mouseenter", sideBarRightArrowEnterF)
-sideBarRightArrow.addEventListener("mouseleave", sideBarRightArrowLeaveF)
+sideBarRightArrow.addEventListener("mouseenter", sideBarRightArrowEnterF);
 
 function sideBarRightArrowEnterF(){
-    sideBarRightArrowIcon.classList.add("bg__rightArrow__hover")
-    sideBarRightArrowIcon.classList.remove("bg__rightArrow__leave")
+    sideBarRightArrowIcon.classList.add("bg__rightArrow__hover");
+    sideBarRightArrowIcon.classList.remove("bg__rightArrow__leave");
 
 }
 
